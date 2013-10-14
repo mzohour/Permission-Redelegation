@@ -1,0 +1,15 @@
+android.app.action.DEVICE_ADMIN_ENABLED,android.permission.BIND_DEVICE_ADMIN
+android.intent.action.EXTERNAL_APPLICATIONS_UNAVAILABLE,android.permission.BROADCAST_PACKAGE_REMOVED
+android.intent.action.PACKAGE_CHANGED,android.permission.BROADCAST_PACKAGE_REMOVED
+android.intent.action.PACKAGE_REMOVED,android.permission.BROADCAST_PACKAGE_REMOVED
+android.intent.action.UID_REMOVED,android.permission.BROADCAST_PACKAGE_REMOVED
+android.provider.Telephony.SMS_RECEIVED,android.permission.BROADCAST_SMS
+android.bluetooth.adapter.action.REQUEST_DISCOVERABLE,android.permission.BLUETOOTH
+android.bluetooth.adapter.action.REQUEST_ENABLE,android.permission.BLUETOOTH
+android.intent.action.CALL,android.permission.CALL_PHONE
+android.intent.action.CALL_PRIVILEGED,android.permission.CALL_PRIVILEGED
+android.intent.action.CALL_EMERGENCY,android.permission.CALL_PRIVILEGED
+android.search.action.GLOBAL_SEARCH,android.permission.GLOBAL_SEARCH_CONTROL
+android.intent.action.ACTION_REQUEST_SHUTDOWN,android.permission.SHUTDOWN
+android.view.InputMethod,android.permission.BIND_INPUT_METHOD
+android.service.wallpaper.WallpaperService,android.permission.BIND_WALLPAPER

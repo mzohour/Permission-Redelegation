@@ -1,0 +1,10 @@
+f = open("/home/mzohour/Permission-Redelegation/permission-maps/api-map-pre", 'r')
+f2 = open("/home/mzohour/Permission-Redelegation/permission-maps/api-map", 'w')
+for l in f:
+	l2 = l.split(" AND ")
+	if len(l2) == 1:
+		f2.write(l)
+	else: 
+		f2.write(l[0])
+		for i in l2[1:]:
+			f2.write(l2[0].split(",")[0] + "," + i)	

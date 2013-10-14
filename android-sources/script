@@ -1,0 +1,15 @@
+f = open("/home/mzohour/Permission-Redelegation/android-sources/intent.java", "r")
+w = open("/home/mzohour/Permission-Redelegation/android-sources/intent-mapping", "w")
+flag = False
+for l in f:
+	if flag is True:
+		w.write(l.strip().strip(";").strip("\"") + "\n")
+		flag = False
+	if l.startswith("public static final String"):
+		l2 = l.split("=")
+		if len(l2) == 2:
+			if l2[1].strip() == "":
+				w.write(l2[0].strip().split(" ")[-1] + ",")
+				flag = True
+			else:
+				w.write(l2[0].strip().split(" ")[-1] + "," + l2[1].strip().strip(";").strip("\"") + "\n")

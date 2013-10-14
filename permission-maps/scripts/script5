@@ -1,0 +1,10 @@
+f = open("/home/mzohour/Permission-Redelegation/permission-maps/content-provider-pre2", 'r')
+f2 = open("/home/mzohour/Permission-Redelegation/permission-maps/content-provider", 'w')
+i = 0
+for l in f:
+	if i == 0:
+		f2.write(l.strip("\n") + ",")
+		i = 1
+	else:
+		f2.write(l.strip("\n") + "\n")
+		i = 0

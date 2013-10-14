@@ -1,0 +1,5 @@
+f = open("/home/mzohour/Permission-Redelegation/permission-maps/api-map", 'r')
+for l in f:
+	l2 = l.split(",")
+	if len(l2) > 2:
+		print l

@@ -1,0 +1,10 @@
+f = open("/home/mzohour/Permission-Redelegation/permission-maps/api-html", 'r')
+f2 = open("/home/mzohour/Permission-Redelegation/permission-maps/api-map", 'w')
+for l in f:
+	if l.startswith("<div class=\"leftThirdApi"):
+		s = l.replace("<div class=\"leftThirdApi\">" , "").split("(")[0]
+		f2.write(s + ",")
+		
+	if l.startswith("<div class=\"middleThirdApi"):
+		s = l.replace("<div class=\"middleThirdApi\">" , "").split("<")[0]
+		f2.write(s + "\n")
