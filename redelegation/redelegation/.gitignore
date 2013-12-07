@@ -2,3 +2,6 @@
 /AndroidManifestParser.class
 /AndroidManifestParser$Book.class
 /AndroidManifestParser$Component.class
+/Issue.class
+/RedelegationIssue.class
+/IntentVisitor.class

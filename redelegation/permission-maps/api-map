@@ -548,7 +548,6 @@ android.content.pm.IPackageManager$Stub$Proxy.replacePreferredActivity,android.p
 android.content.pm.IPackageManager$Stub$Proxy.setApplicationEnabledSetting,android.permission.CHANGE_COMPONENT_ENABLED_STATE
 android.content.pm.IPackageManager$Stub$Proxy.setComponentEnabledSetting,android.permission.CHANGE_COMPONENT_ENABLED_STATE
 android.content.pm.IPackageManager$Stub$Proxy.setInstallLocation,android.permission.WRITE_SECURE_SETTINGS
-android.content.pm.IPackageManager$Stub$Proxy.updateExternalMediaStatus,
 android.content.pm.PackageManager.addPreferredActivity,android.permission.SET_PREFERRED_APPLICATIONS
 android.content.pm.PackageManager.clearApplicationUserData,android.permission.CLEAR_APP_USER_DATA
 android.content.pm.PackageManager.clearPackagePreferredActivities,android.permission.SET_PREFERRED_APPLICATIONS

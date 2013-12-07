@@ -14,8 +14,6 @@
 * limitations under the License.
 */
 
-package android.content;
-
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 

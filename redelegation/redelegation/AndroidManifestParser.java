@@ -59,6 +59,11 @@ public class AndroidManifestParser extends DefaultHandler {
         }
         if (elementName.equals("action")) {
             mTmpComponent.mActions.add(attributes.getValue("android:name"));
+            mTmpComponent.mPublic = true;
+        }
+        if (attributes.getValue("android:exported") != null &&
+        		attributes.getValue("android:exported").equals("true")) {
+        	mTmpComponent.mPublic = true;
         }
     }
 
@@ -66,11 +71,16 @@ public class AndroidManifestParser extends DefaultHandler {
         String mName;
         Set<String> mPermissions;
         Set<String> mActions;
+        boolean mPublic;
         
         public Component(String name){
         	mName = name;
             mActions = Sets.newHashSet();
             mPermissions = Sets.newHashSet();
         }        
+        
+        public boolean isPublic() {
+        	return mPublic;
+        }
     }
 }
